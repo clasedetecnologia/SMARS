@@ -17,6 +17,8 @@ int v_der = 255; // variable global para controlar la velocidad del motor der
 void setup() { 
   motorIZQ.setSpeed(v_izq); 
   motorDER.setSpeed (v_der);  
+  motorIZQ.run(RELEASE); //ENCENDER MOTORES
+  motorDER.run(RELEASE);
 }//setup
 
 void loop() { 
