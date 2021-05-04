@@ -11,12 +11,9 @@ https://github.com/clasedetecnologia/SMARS/
 AF_DCMotor motorIZQ(1); // set up motor1. motorIZQ es el nombre, conectado al puerto 1
 AF_DCMotor motorDER(2); // set up motor2. motorDER es el nombre, conectado al puerto 2
 
-int v_izq = 240; // variable global para controlar la velocidad del motor izq
-int v_der = 255; // variable global para controlar la velocidad del motor der
-
 void setup() { 
-  motorIZQ.setSpeed(v_izq); 
-  motorDER.setSpeed (v_der);  
+  motorIZQ.setSpeed(255); //VELOCIDAD ENTRE 0-255
+  motorDER.setSpeed (255);  
   motorIZQ.run(RELEASE); //ENCENDER MOTORES
   motorDER.run(RELEASE);
 }//setup
